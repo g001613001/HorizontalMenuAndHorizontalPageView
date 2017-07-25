@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HorizontalMenuAndHorizontalPageView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CLD-sT-Nsj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="WS4-ol-4Yu"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vhz-Tv-Mdb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vhz-Tv-Mdb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6Gd-16-YFl"/>
+                            <constraint firstItem="CLD-sT-Nsj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7nX-XR-C0i"/>
+                            <constraint firstAttribute="trailing" secondItem="CLD-sT-Nsj" secondAttribute="trailing" id="DQx-XA-khg"/>
+                            <constraint firstAttribute="trailing" secondItem="vhz-Tv-Mdb" secondAttribute="trailing" id="IXf-6g-hca"/>
+                            <constraint firstItem="vhz-Tv-Mdb" firstAttribute="top" secondItem="CLD-sT-Nsj" secondAttribute="bottom" id="JHA-du-F7m"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vhz-Tv-Mdb" secondAttribute="bottom" id="T71-qV-BNv"/>
+                            <constraint firstItem="CLD-sT-Nsj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gBo-H3-G10"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="view4HorizontalMenu" destination="CLD-sT-Nsj" id="1kD-vy-MKS"/>
+                        <outlet property="view4HorizontalPageView" destination="vhz-Tv-Mdb" id="UOz-0K-Q1n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>

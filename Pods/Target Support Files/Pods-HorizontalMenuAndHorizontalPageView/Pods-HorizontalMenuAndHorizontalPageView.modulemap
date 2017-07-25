@@ -1,0 +1,6 @@
+framework module Pods_HorizontalMenuAndHorizontalPageView {
+  umbrella header "Pods-HorizontalMenuAndHorizontalPageView-umbrella.h"
+
+  export *
+  module * { export * }
+}
